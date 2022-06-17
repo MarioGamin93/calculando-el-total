@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculando el total</title>
+</head>
+<body>
+    <!-- CONTENEDOR FLEX -->
+    <div class="container--flex">
+
+        <!-- CARD -->
+        <div class="card">
+            <div class="img">
+                <img src="assets/img/tele.webp" alt="televisor">
+            </div>
+            <h3 class="title">LED Smart TV 32</h3>
+            <form class="form" id="form">
+                <div class="card_input">
+                    <input type="number" class="input" id="number" placeholder="Escribe la cantidad">
+                </div>
+
+                <div>
+                    <input type="text" class="input" id="text" placeholder="Escribe el color">
+                </div>
+
+                <p class="precio">Precio: $80.000</p>
+    
+                <input class="button" type="submit" value="Calcular Total">
+            </form>
+        </div>
+
+       <!-- DESCRIPTION -->
+        <div class="description">
+            <p id="total">Total: $0</p>
+            <p id="cantidad">Cantidad: 0</p>
+            <div class="description_container">
+                <p>Color: <div class="box" id="color"></div> </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- script JS -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
