@@ -5,9 +5,7 @@ let img = document.querySelector('img');
 let form = document.getElementById('form');
 let text = document.getElementById('text');
 let number = document.getElementById('number');
-const num2 = 80.000;
-
-
+const precio = 80000;
 
 let cantidad = document.getElementById('cantidad');
 let total = document.getElementById('total');
@@ -16,7 +14,8 @@ let total = document.getElementById('total');
 //* Evento
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    total.innerHTML = 'Total: $'+ parseFloat(number.value*num2).toFixed(3);
+    let resultado = (number.value*precio).toLocaleString('es-CL');
+    total.innerHTML = 'Total: $'+ resultado;
     cantidad.innerHTML = 'Cantidad: '+ number.value;
     color.style.backgroundColor = text.value;
 })
