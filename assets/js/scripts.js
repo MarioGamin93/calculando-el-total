@@ -1,14 +1,14 @@
 //* Variables
-let body = document.querySelector('body');
-let img = document.querySelector('img');
+const body = document.querySelector('body');
+const img = document.querySelector('img');
 
-let form = document.getElementById('form');
-let text = document.getElementById('text');
-let number = document.getElementById('number');
-const precio = 80000;
+const form = document.getElementById('form');
+const text = document.getElementById('text');
+const number = document.getElementById('number');
+let precio = 80000;
 
-let cantidad = document.getElementById('cantidad');
-let total = document.getElementById('total');
+const cantidad = document.getElementById('cantidad');
+const total = document.getElementById('total');
 
 
 //* Evento
