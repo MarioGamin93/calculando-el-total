@@ -15,14 +15,14 @@ let total = document.getElementById('total');
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     let resultado = (number.value*precio).toLocaleString('es-CL');
-    total.innerHTML = 'Total: $'+ resultado;
-    cantidad.innerHTML = 'Cantidad: '+ number.value;
-    color.style.backgroundColor = text.value;
+    total.innerHTML = (`Total: $${resultado}`);
+    cantidad.innerHTML = (`Cantidad: ${number.value}`);
+    color.style.backgroundColor = (text.value);
 })
 
 //* Style 
-body.style.backgroundColor = 'lightgreen';
-body.style.color = '#333';
-img.style.width = '100%';
+body.style.backgroundColor = ('lightgreen');
+body.style.color = ('#333');
+img.style.width = ('100%');
 
 
